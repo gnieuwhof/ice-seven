@@ -5,9 +5,13 @@ VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceSeven", "IceSeven\IceSeven.csproj", "{AB52F5CF-B72A-4A4A-A449-1790FFD99D4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexicalAnalysis", "LexicalAnalysis\LexicalAnalysis.csproj", "{C1D4A8E8-439C-4ABD-AE61-A6A6A879343E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LexicalAnalysis", "LexicalAnalysis\LexicalAnalysis.csproj", "{C1D4A8E8-439C-4ABD-AE61-A6A6A879343E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LexicalAnalysisTests", "LexicalAnalysisTests\LexicalAnalysisTests.csproj", "{503BAC9C-0E33-486A-A705-3F4F38C28FC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LexicalAnalysisTests", "LexicalAnalysisTests\LexicalAnalysisTests.csproj", "{503BAC9C-0E33-486A-A705-3F4F38C28FC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxAnalysis", "SyntaxAnalysis\SyntaxAnalysis.csproj", "{9599A78F-5CCF-40B6-A1DB-7AABB87A2F59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyntaxAnalysisTests", "SyntaxAnalysisTests\SyntaxAnalysisTests.csproj", "{C5095C53-9D6D-4FFD-A993-27B21ADDCF68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{503BAC9C-0E33-486A-A705-3F4F38C28FC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{503BAC9C-0E33-486A-A705-3F4F38C28FC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{503BAC9C-0E33-486A-A705-3F4F38C28FC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9599A78F-5CCF-40B6-A1DB-7AABB87A2F59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9599A78F-5CCF-40B6-A1DB-7AABB87A2F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9599A78F-5CCF-40B6-A1DB-7AABB87A2F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9599A78F-5CCF-40B6-A1DB-7AABB87A2F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5095C53-9D6D-4FFD-A993-27B21ADDCF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5095C53-9D6D-4FFD-A993-27B21ADDCF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5095C53-9D6D-4FFD-A993-27B21ADDCF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5095C53-9D6D-4FFD-A993-27B21ADDCF68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
