@@ -22,7 +22,7 @@
 
                 if (!char.IsWhiteSpace(current))
                 {
-                    src.Reverse();
+                    src.Rewind();
                     break;
                 }
 

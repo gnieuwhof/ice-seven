@@ -65,7 +65,7 @@
             this.Character += positions;
         }
 
-        public void Reverse(int positions = 1) =>
+        public void Rewind(int positions = 1) =>
             this.Advance(positions * -1);
 
         public IEnumerable<string> GetLastLines(int amount)
@@ -101,7 +101,7 @@
 
             while ((this.Current == '\n') || (this.Current == '\r'))
             {
-                this.Reverse();
+                this.Rewind();
             }
 
             index = this.Index;

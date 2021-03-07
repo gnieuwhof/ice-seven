@@ -71,7 +71,7 @@
             var src = new Source("abc");
 
             src.Advance();
-            src.Reverse();
+            src.Rewind();
 
             Assert.Equal('a', src.Current);
         }
@@ -81,7 +81,7 @@
         {
             var src = new Source("abc");
 
-            src.Reverse(10);
+            src.Rewind(10);
 
             Assert.Equal(Source.InvalidChar, src.Current);
         }

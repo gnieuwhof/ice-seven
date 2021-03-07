@@ -125,5 +125,15 @@
 
             Assert.Equal(1, lexer.Src.Index);
         }
+
+        [Fact]
+        public void EndsWithInvalidCharacterTest()
+        {
+            var lexer = Lexer.CreateState("1a");
+
+            bool result = NumberScanner.Scan(lexer, ref this.token);
+
+            Assert.False(result);
+        }
     }
 }

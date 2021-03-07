@@ -1,6 +1,7 @@
 ﻿namespace LexicalAnalysis.Scanners
 {
     using System;
+    using System.Linq;
 
     public static class NumberScanner
     {
@@ -18,6 +19,20 @@
             string value = string.Empty;
             bool dotEncountered = false;
             bool success = true;
+            var validNexts = new[] {
+                ';',
+                ',',
+                ')',
+                ']',
+                ' ',
+                '+',
+                '-',
+                '*',
+                '/',
+                '\n',
+                '\t',
+                '\r',
+            };
 
             while (!src.ReachedEnd())
             {
@@ -53,7 +68,14 @@
 
             if (success)
             {
-                src.Reverse();
+                if (!src.ReachedEnd() && !validNexts.Contains(src.Current))
+                {
+                    success = false;
+                }
+                else
+                {
+                    src.Rewind();
+                }
             }
 
             TokenType tokenType = dotEncountered

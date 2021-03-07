@@ -32,7 +32,7 @@
                     continue;
                 }
 
-                src.Reverse();
+                src.Rewind();
 
                 break;
             }

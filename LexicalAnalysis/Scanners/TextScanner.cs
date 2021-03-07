@@ -180,7 +180,7 @@
                 src.Advance();
             }
 
-            src.Reverse();
+            src.Rewind();
 
             token.Type = TokenType.NewLine;
             token.Value = value;

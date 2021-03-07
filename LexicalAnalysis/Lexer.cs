@@ -56,7 +56,7 @@
 
                 if (token.Type == TokenType.ContentEnd)
                 {
-                    this.Src.Reverse();
+                    this.Src.Rewind();
 
                     break;
                 }
